@@ -32,6 +32,8 @@
       parser
       (zero-counter 50)))
 
+(first-half) ; => 1120
+
 (defn to-1s
   [entries]
   (->> entries
@@ -48,3 +50,5 @@
       parser
       to-1s
       (zero-counter 50)))
+
+(second-half) ; => 6554
